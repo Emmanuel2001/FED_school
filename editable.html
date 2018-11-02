@@ -1,0 +1,292 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.7">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.7/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.7/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/javascript" class="silex-script"></script>
+    <style class="silex-inline-styles" type="text/css">.body-initial {padding: 30px; border: 1px; display: inline-block; width: 100px; background-color: rgba(255,255,255,1); font-family: Arial, Helvetica, sans-serif; margin-left: 20px;}.silex-id-1541177413025-1 {width: 452px; background-color: rgb(255, 255, 255); min-height: 440px; top: 77px; left: 444px;}</style>
+    <title></title>
+    <script type="text/json" class="silex-json-styles">[{"desktop":{"body-initial":{"padding":"30px","border":"1px","display":"inline-block","width":"100px","background-color":"rgba(255,255,255,1)","font-family":"Arial, Helvetica, sans-serif","margin-left":"20px"},"silex-id-1474394621032-2":{"min-height":"600px","background-color":"transparent","width":"1200px","top":"","left":"","height":""},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px","height":""},"silex-id-1478366444112-0":{"min-height":"100px","background-color":"transparent","width":"1200px","top":"","left":"","height":""},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px","top":"","left":"","height":""},"silex-id-1541177202782-0":{"width":"275px","background-color":"rgb(255, 255, 255)","min-height":"100px","top":"-15px","left":"402px"},"silex-id-1541177413025-1":{"width":"452px","background-color":"rgb(255, 255, 255)","min-height":"440px","top":"77px","left":"444px"}},"mobile":{},"prodotypeData":{"component":{},"style":{"all-style":{"className":"all-style","templateName":"text","displayName":"All style","styles":{"desktop":{"normal":{"className":"all-style","pseudoClass":"normal"}}}}}}}]</script>
+
+    
+<style class="silex-prodotype-style" type="text/css" data-style-id="all-style"></style><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport=""><!-- Silex HEAD tag do not remove -->
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizza Order Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+<body data-silex-id="body-initial" class="body-initial all-style enable-mobile silex-runtime" data-silex-type="container">
+    <form>
+        <h1>Pizza Order Form</h1>
+        <div>
+            <label>Pizza Type: </label>
+            <select required="">
+                <option value="">Please Select</option>
+                    <option value="Aloha Chicken">Aloha Chicken</option>
+                    <option value="Beef Pepperoni">Beef Pepperoni</option>
+                    <option value="Chicken Delight">Chicken Delight</option>
+                    <option value="Deluxe Cheese">Deluxe Cheese</option>
+            </select>
+
+            <label>Quantity: </label>
+            <select required="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend>Size</legend>
+                
+                <input type="radio" name="Size" value="Small" required=""> Small
+                <input type="radio" name="Size" value="Regular"> Regular
+                <input type="radio" name="Size" value="Large"> Large
+                
+            </fieldset>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend>Crust</legend>
+                
+                <input type="radio" name="Crust" value="Thin" required=""> Thin
+                <input type="radio" name="Crust" value="Thick"> Thick
+                <input type="radio" name="Crust" value="Deep Dish"> Deep Dish
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Toppings</legend>
+                
+                <input type="checkbox" name="Toppings" value="Mushrooms"> Mushrooms
+                <input type="checkbox" name="Toppings" value="Sausage"> Sausage
+                <input type="checkbox" name="Toppings" value="Olives"> Olives
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Addons</label>
+
+            <select>
+                <option value="Please select addons if required">Please select addons if required</option>
+                <option value="Side of Buffalo Wings">Side of Buffalo Wings</option>
+                <option value="Garlic Bread">Garlic Bread</option>
+            </select>
+        </div>
+        
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Deliver to:</legend>
+
+                <label>Name:</label>
+                <input type="text" autocomplete="on" required="">
+
+                <br>
+                <br>
+                <label>Address:</label>
+                <textarea name="Address" rows="2" cols="30" required=""></textarea>
+
+                <label>Postal Code:</label>
+                <input type="text" pattern="\d{6}" maxlength="6" required="">
+                <br>
+                <br>
+
+                <label>Phone:</label>
+                <input type="tel" required="" pattern="[968]\d{7}">
+
+                <br>
+                <br>
+                
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your Email here" required="">
+
+                <br>
+                <br>
+
+                <label>Date:</label>
+                <input type="date" min="2018-10-29" max="2018-11-4" required="">
+
+                <label>Time:</label>
+                <input type="time" min="10:00" max="22:00" step="900" value="10:00" required="">
+
+
+
+
+            </fieldset>
+        </div>
+
+        <input type="submit">
+    </form>
+
+
+
+
+    <div class="silex-pages">
+        <div data-silex-type="image" class="editable-style silex-id-hamburger-menu image-element menu-button prevent-draggable prevent-resizable" data-silex-id="silex-id-hamburger-menu">
+            <img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII=" class="silex-element-content">
+        </div>
+
+        <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a></div>
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-silex-type="html" class="editable-style silex-id-1541177413025-1 html-element" data-silex-id="silex-id-1541177413025-1" style=""><div class="silex-element-content">
+    <form>
+        <h1>Pizza Order Form</h1>
+        <div>
+            <label>Pizza Type: </label>
+            <select required="">
+                <option value="">Please Select</option>
+                    <option value="Aloha Chicken">Aloha Chicken</option>
+                    <option value="Beef Pepperoni">Beef Pepperoni</option>
+                    <option value="Chicken Delight">Chicken Delight</option>
+                    <option value="Deluxe Cheese">Deluxe Cheese</option>
+            </select>
+
+            <label>Quantity: </label>
+            <select required="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend>Size</legend>
+                
+                <input type="radio" name="Size" value="Small" required=""> Small
+                <input type="radio" name="Size" value="Regular"> Regular
+                <input type="radio" name="Size" value="Large"> Large
+                
+            </fieldset>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend>Crust</legend>
+                
+                <input type="radio" name="Crust" value="Thin" required=""> Thin
+                <input type="radio" name="Crust" value="Thick"> Thick
+                <input type="radio" name="Crust" value="Deep Dish"> Deep Dish
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Toppings</legend>
+                
+                <input type="checkbox" name="Toppings" value="Mushrooms"> Mushrooms
+                <input type="checkbox" name="Toppings" value="Sausage"> Sausage
+                <input type="checkbox" name="Toppings" value="Olives"> Olives
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Addons</label>
+
+            <select>
+                <option value="Please select addons if required">Please select addons if required</option>
+                <option value="Side of Buffalo Wings">Side of Buffalo Wings</option>
+                <option value="Garlic Bread">Garlic Bread</option>
+            </select>
+        </div>
+        
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Deliver to:</legend>
+
+                <label>Name:</label>
+                <input type="text" autocomplete="on" required="">
+
+                <br>
+                <br>
+                <label>Address:</label>
+                <textarea name="Address" rows="2" cols="30" required=""></textarea>
+
+                <label>Postal Code:</label>
+                <input type="text" pattern="\d{6}" maxlength="6" required="">
+                <br>
+                <br>
+
+                <label>Phone:</label>
+                <input type="tel" required="" pattern="[968]\d{7}">
+
+                <br>
+                <br>
+                
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your Email here" required="">
+
+                <br>
+                <br>
+
+                <label>Date:</label>
+                <input type="date" min="2018-10-29" max="2018-11-4" required="">
+
+                <label>Time:</label>
+                <input type="time" min="10:00" max="22:00" step="900" value="10:00" required="">
+
+
+
+
+            </fieldset>
+        </div>
+
+        <input type="submit">
+    </form>
+
+</div></div></body></html><!-- End of Silex HEAD tag do not remove -->
